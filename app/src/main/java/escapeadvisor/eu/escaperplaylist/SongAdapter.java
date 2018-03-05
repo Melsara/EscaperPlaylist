@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import org.jetbrains.annotations.Nullable;
 
@@ -22,7 +23,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
     @Override
     public View getView(int position, @Nullable View convertView, ViewGroup parent) {
-        Song currentWord = getItem(position);
+        Song currentSong = getItem(position);
 
         View listItemView = convertView;
         if(listItemView == null) {
@@ -30,10 +31,12 @@ public class SongAdapter extends ArrayAdapter<Song> {
                     R.layout.grid_item, parent, false);
         }
 
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.title_textView);
-        miwokTextView.setText(currentWord.getSongTitle());
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.artist_textView);
-        defaultTextView.setText(currentWord.getSongArtist());
+        TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_textView);
+        titleTextView.setText(currentSong.getSongTitle());
+        TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_textView);
+        artistTextView.setText(currentSong.getSongArtist());
+        ImageView artImageView = (ImageView) listItemView.findViewById(R.id.art_imageView);
+        artImageView.setImageDrawable(currentSong.getSongArt());
 
         return listItemView;
     }

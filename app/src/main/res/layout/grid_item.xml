@@ -9,9 +9,7 @@
     <ImageView
 
         android:id="@+id/art_imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
+        style="@style/GridItemImage"
         android:src="@drawable/logo"/>
 
     <LinearLayout
@@ -24,17 +22,13 @@
 
     <TextView
         android:id="@+id/title_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:paddingLeft="@dimen/padding"/>
+        style="@style/GridItemText"
+        android:paddingTop="@dimen/half_padding"/>
 
     <TextView
         android:id="@+id/artist_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:paddingLeft="@dimen/padding"/>
+        style="@style/GridItemText"
+        android:paddingBottom="@dimen/half_padding"/>
 
     </LinearLayout>
 

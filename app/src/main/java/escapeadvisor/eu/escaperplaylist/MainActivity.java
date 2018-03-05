@@ -16,7 +16,12 @@ public class MainActivity extends Activity {
 
         ArrayList<Song> songs = new ArrayList<Song>();
 
-        songs.add(new Song("spotify:track:08boNC19ELI4p6QJhNDFX7", "Title", "Artist", "Album", (getDrawable(R.drawable.logo))));
+        songs.add(new Song("spotify:track:08boNC19ELI4p6QJhNDFX7", "Title1", "Artist1", "Album1", (getDrawable(R.drawable.art1))));
+        songs.add(new Song("spotify:track:08boNC19ELI4p6QJhNDFX7", "Title2", "Artist2", "Album2", (getDrawable(R.drawable.art2))));
+        songs.add(new Song("spotify:track:08boNC19ELI4p6QJhNDFX7", "Title3", "Artist3", "Album3", (getDrawable(R.drawable.art3))));
+        songs.add(new Song("spotify:track:08boNC19ELI4p6QJhNDFX7", "Title4", "Artist4", "Album4", (getDrawable(R.drawable.art4))));
+        songs.add(new Song("spotify:track:08boNC19ELI4p6QJhNDFX7", "Title5", "Artist5", "Album5", (getDrawable(R.drawable.art5))));
+        songs.add(new Song("spotify:track:08boNC19ELI4p6QJhNDFX7", "Title6", "Artist6", "Album6", (getDrawable(R.drawable.art6))));
 
         SongAdapter songAdapter =  new SongAdapter(this, songs);
         GridView gridView = (GridView) findViewById(R.id.gridView);
