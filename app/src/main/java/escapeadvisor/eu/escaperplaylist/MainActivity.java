@@ -1,13 +1,17 @@
 package escapeadvisor.eu.escaperplaylist;
 
 import android.app.Activity;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends Activity {
+
+    final static String URI_KEY = "uri_key";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,19 @@ public class MainActivity extends Activity {
         SongAdapter songAdapter =  new SongAdapter(this, songs);
         GridView gridView = (GridView) findViewById(R.id.gridView);
         gridView.setAdapter(songAdapter);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Song song = (Song) adapterView.getItemAtPosition(i);
+                String uri = song.getSongUri();
+                Intent openSongDetail = new Intent(MainActivity.this, DetailsActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString(URI_KEY, uri);
+                openSongDetail.putExtras(bundle);
+                startActivity(openSongDetail);
+
+            }
+        });
 
     }
 }
