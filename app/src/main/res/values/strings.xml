@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EscaperPlaylist</string>
+    <string name="main_activity">Our favourite songs</string>
+    <string name="details_activity">Play the song</string>
 </resources>
