@@ -25,7 +25,9 @@ public class MainActivity extends Activity {
         setActivityComponent();
         createSongList();
 
-
+/**
+ * Set clickable action for all items in the GridView
+ */
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -49,10 +51,16 @@ public class MainActivity extends Activity {
 
     }
 
+    /**
+     * Find views on activity_main
+     */
     public void setActivityComponent () {
         gridView = (GridView) findViewById(R.id.gridView);
     }
 
+    /**
+     * Create Song list and set items through adapter
+     */
     public void createSongList () {
         ArrayList<Song> songs = new ArrayList<Song>();
 
