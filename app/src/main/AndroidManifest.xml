@@ -20,6 +20,8 @@
         <activity android:name=".DetailsActivity"
             android:label="@string/details_activity">
         </activity>
+        <activity android:name=".SpfyPlayer">
+        </activity>
     </application>
 
 </manifest>
