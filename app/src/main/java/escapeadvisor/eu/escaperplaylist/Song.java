@@ -15,9 +15,9 @@ public class Song {
     private String mSongTitle;
     private String mSongArtist;
     private String mSongAlbum;
-    private Drawable mSongArt;
+    private int mSongArt;
 
-    public Song (String songUri, String songTitle, String songArtist, String songAlbum, Drawable songArt){
+    public Song (String songUri, String songTitle, String songArtist, String songAlbum, int songArt){
         mSongUri = songUri;
         mSongTitle = songTitle;
         mSongArtist = songArtist;
@@ -41,7 +41,7 @@ public class Song {
         return mSongAlbum;
     }
 
-    public Drawable getSongArt () {
+    public int getSongArt () {
         return mSongArt;
     }
 

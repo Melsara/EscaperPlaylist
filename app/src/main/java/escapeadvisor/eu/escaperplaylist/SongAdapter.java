@@ -36,7 +36,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_textView);
         artistTextView.setText(currentSong.getSongArtist());
         ImageView artImageView = (ImageView) listItemView.findViewById(R.id.art_imageView);
-        artImageView.setImageDrawable(currentSong.getSongArt());
+        artImageView.setImageResource(currentSong.getSongArt());
 
         return listItemView;
     }
