@@ -43,6 +43,7 @@ public class MainActivity extends Activity {
                 bundle.putString(TITLE_KEY, title);
                 bundle.putString(ARTIST_KEY, artist);
                 bundle.putString(ALBUM_KEY, album);
+                bundle.putInt(ART_KEY, art);
                 openSongDetail.putExtras(bundle);
                 startActivity(openSongDetail);
 
