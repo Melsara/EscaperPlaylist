@@ -28,7 +28,7 @@
         android:layout_marginTop="80dp"
         android:background="@null"
         android:scaleType="fitXY"
-        android:src="@drawable/spfy"
+        android:src="@drawable/spfygreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintLeft_toRightOf="@+id/textViewTitle"
@@ -42,7 +42,7 @@
         android:layout_marginBottom="188dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/margin"
+        android:layout_marginTop="@dimen/double_margin"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,9 +77,9 @@
         app:layout_constraintVertical_bias="0.009" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewButton"
         android:layout_width="150dp"
-        android:layout_height="17dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
         android:layout_marginTop="4dp"
         android:text="@string/play"

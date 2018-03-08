@@ -3,4 +3,30 @@
     <string name="main_activity">Our favourite songs</string>
     <string name="details_activity">Play the song</string>
     <string name="play">Play</string>
+    <string name="playing">Playing</string>
+    <string name="uri1">spotify:track:08boNC19ELI4p6QJhNDFX7</string>
+    <string name="title1">Mansion</string>
+    <string name="artist1">NF</string>
+    <string name="album1">Mansion</string>
+    <string name="uri2">spotify:track:3sdkizwy9pJJABWimxp6Hu</string>
+    <string name="title2">1.0_3-fucksociety.mp3</string>
+    <string name="artist2">Mac Quayle</string>
+    <string name="album2">Mr. Robot, Vol. 1</string>
+    <string name="uri3">spotify:track:5Qyywa7BZCkXE5K6O6OHPb</string>
+    <string name="title3">Let me out</string>
+    <string name="artist3">Future Leaders of the World</string>
+    <string name="album3">LVLIV</string>
+    <string name="uri4">spotify:track:57BrRMwf9LrcmuOsyGilwr</string>
+    <string name="title4">Crawling</string>
+    <string name="artist4">Linking Park</string>
+    <string name="album4">Hybrid Theory</string>
+    <string name="uri5">spotify:track:/3J19l4hOfwFFIF715BwVcG</string>
+    <string name="title5">Anthem for the year 2000</string>
+    <string name="artist5">Silverchair</string>
+    <string name="album5">Neon Ballroom</string>
+    <string name="uri6">spotify:track:3B7udSGy2PfgoCniMSb523</string>
+    <string name="title6">I see fire</string>
+    <string name="artist6">Ed Sheeran</string>
+    <string name="album6">The hobbit - The desolation of Smaug</string>
+
 </resources>
