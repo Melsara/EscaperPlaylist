@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.spotify.sdk.android.authentication.AuthenticationClient;
 import com.spotify.sdk.android.authentication.AuthenticationRequest;
 import com.spotify.sdk.android.authentication.AuthenticationResponse;
@@ -20,17 +19,12 @@ import com.spotify.sdk.android.player.PlayerEvent;
 import com.spotify.sdk.android.player.Spotify;
 import com.spotify.sdk.android.player.SpotifyPlayer;
 
-import static com.spotify.sdk.android.player.PlayerEvent.kSpPlaybackNotifyPause;
-
 public class DetailsActivity extends Activity implements SpotifyPlayer.NotificationCallback, ConnectionStateCallback {
-
+    // Spfy player params
     private static final String CLIENT_ID = "[CLIENT-ID]";
     private static final String REDIRECT_URI = "escaperplaylist://callback";
-
-    // Request code that will be used to verify if the result comes from correct activity
-    // Can be any integer
+    // Spfy player request code that will be used to verify if the result comes from correct activity
     private static final int REQUEST_CODE = 1111;
-
     private Player mPlayer;
     private String uri;
     private String title;
@@ -55,6 +49,7 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+        //Retrieving data from intent
         Intent openSongDetail = getIntent();
         final Bundle bundle = openSongDetail.getExtras();
         uri = bundle.getString(URI_KEY);

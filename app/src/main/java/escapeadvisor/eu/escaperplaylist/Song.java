@@ -25,21 +25,46 @@ public class Song {
         mSongArt = songArt;
     }
 
+    /**
+     * Get song URI
+     * @return mSongUri
+     */
+
     public String getSongUri () {
         return mSongUri;
     }
+
+    /**
+     * Get song Title
+     * @return mSongTitle
+     */
 
     public String getSongTitle () {
         return mSongTitle;
     }
 
+    /**
+     * Get song Artist
+     * @return mSongArtist
+     */
+
     public String getSongArtist () {
         return mSongArtist;
     }
 
+    /**
+     * Get song Album
+     * @return mSongAlbum
+     */
+
     public String getSongAlbum () {
         return mSongAlbum;
     }
+
+    /**
+     * Get song Art
+     * @return mSongArt
+     */
 
     public int getSongArt () {
         return mSongArt;
