@@ -8,4 +8,6 @@
     <dimen name="text_font_size">18sp</dimen>
     <dimen name="title_font_size">24sp</dimen>
     <dimen name="big_title_font_size">42sp</dimen>
+    <dimen name="button_size">92dp</dimen>
+    <dimen name="maxWidth">250dp</dimen>
 </resources>
