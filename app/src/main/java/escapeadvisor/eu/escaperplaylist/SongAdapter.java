@@ -31,6 +31,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
                     R.layout.grid_item, parent, false);
         }
 
+        //Setting data to item in GridView (grid_item)
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_textView);
         titleTextView.setText(currentSong.getSongTitle());
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_textView);
