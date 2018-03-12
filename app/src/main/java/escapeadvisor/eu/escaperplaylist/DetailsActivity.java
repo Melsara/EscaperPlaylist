@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,6 +43,8 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
     final static String ALBUM_KEY = "album_key";
     final static String ART_KEY = "art_key";
     ImageButton playButton;
+    private Button backButton;
+    private Button stopButton;
     boolean playerIsPlaying = false;
 
 
@@ -62,6 +65,7 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
         /*Calling back on actionBar*/
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
+        /*OnClickListener on play button*/
         if (playButton != null) {
             playButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -83,6 +87,31 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
                 }
             });
 
+            /*OnClickListener on back button*/
+            if (backButton != null) {
+                backButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                      onDestroy();
+                      finish();
+                    }
+                });
+            }
+
+            /*OnClickListener on stop button*/
+            if (stopButton != null) {
+                stopButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        onDestroy();
+                        /*Changing state of the play button when pressed*/
+                        playButton.setImageResource(R.drawable.spfygreen);
+                        buttonText.setText(R.string.play);
+                        playerIsPlaying = false;
+                    }
+                });
+            }
+
         }
 
     }
@@ -101,6 +130,8 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
         albumTextView.setText(album);
         playButton = (ImageButton) findViewById(R.id.buttonPlay);
         buttonText = (TextView) findViewById(R.id.textViewButton);
+        backButton = (Button) findViewById(R.id.backButton);
+        stopButton = (Button) findViewById(R.id.stopButton);
     }
 
     /**

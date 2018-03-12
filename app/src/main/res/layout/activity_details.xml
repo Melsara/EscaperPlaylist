@@ -15,7 +15,8 @@
             android:layout_width="440dp"
             android:layout_height="302dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/playbg" />
+            android:src="@drawable/playbg"
+            android:contentDescription="@string/contentDesc_image"/>
 
         <LinearLayout
             android:id="@+id/rootTextView"
@@ -24,8 +25,7 @@
             android:layout_below="@id/playerImage"
             android:layout_marginLeft="@dimen/double_margin"
             android:layout_marginRight="@dimen/double_margin"
-            android:orientation="vertical"
-            android:contentDescription="@string/contentDesc_image">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textViewTitle"
@@ -58,6 +58,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/playButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -85,6 +86,29 @@
                 android:gravity="center"
                 android:text="@string/play" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rootTextView"
+            android:layout_marginLeft="@dimen/double_margin"
+            android:layout_marginRight="@dimen/double_margin"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/stop"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stopButton"
+            android:layout_marginLeft="@dimen/double_margin"
+            android:layout_marginRight="@dimen/double_margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/back"
+            android:background="@color/colorAccent"/>
 
     </RelativeLayout>
 
