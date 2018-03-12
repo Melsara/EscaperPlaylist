@@ -4,6 +4,8 @@
     <string name="details_activity">Play the song</string>
     <string name="play">Play</string>
     <string name="playing">Playing</string>
+    <string name="stop">Stop</string>
+    <string name="back">Back</string>
     <string name="uri1">spotify:track:08boNC19ELI4p6QJhNDFX7</string>
     <string name="title1">Mansion</string>
     <string name="artist1">NF</string>
