@@ -24,7 +24,8 @@
             android:layout_below="@id/playerImage"
             android:layout_marginLeft="@dimen/double_margin"
             android:layout_marginRight="@dimen/double_margin"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:contentDescription="@string/contentDesc_image">
 
             <TextView
                 android:id="@+id/textViewTitle"
