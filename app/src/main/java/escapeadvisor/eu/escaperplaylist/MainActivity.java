@@ -65,12 +65,12 @@ public class MainActivity extends Activity {
     public void createSongList () {
         ArrayList<Song> songs = new ArrayList<Song>();
 
-        songs.add(new Song((getString(R.string.uri1)), (getString(R.string.title1)), (getString(R.string.artist1)), (getString(R.string.album1)), R.mipmap.art1));
-        songs.add(new Song((getString(R.string.uri2)), (getString(R.string.title2)), (getString(R.string.artist2)), (getString(R.string.album2)), R.mipmap.art2));
-        songs.add(new Song((getString(R.string.uri3)), (getString(R.string.title3)), (getString(R.string.artist3)), (getString(R.string.album3)), R.mipmap.art3));
-        songs.add(new Song((getString(R.string.uri4)), (getString(R.string.title4)), (getString(R.string.artist4)), (getString(R.string.album4)), R.mipmap.art4));
-        songs.add(new Song((getString(R.string.uri5)), (getString(R.string.title5)), (getString(R.string.artist5)), (getString(R.string.album5)), R.mipmap.art5));
-        songs.add(new Song((getString(R.string.uri6)), (getString(R.string.title6)), (getString(R.string.artist6)), (getString(R.string.album6)), R.mipmap.art6));
+        songs.add(new Song((getString(R.string.uri1)), (getString(R.string.title1)), (getString(R.string.artist1)), (getString(R.string.album1)), R.drawable.art1));
+        songs.add(new Song((getString(R.string.uri2)), (getString(R.string.title2)), (getString(R.string.artist2)), (getString(R.string.album2)), R.drawable.art2));
+        songs.add(new Song((getString(R.string.uri3)), (getString(R.string.title3)), (getString(R.string.artist3)), (getString(R.string.album3)), R.drawable.art3));
+        songs.add(new Song((getString(R.string.uri4)), (getString(R.string.title4)), (getString(R.string.artist4)), (getString(R.string.album4)), R.drawable.art4));
+        songs.add(new Song((getString(R.string.uri5)), (getString(R.string.title5)), (getString(R.string.artist5)), (getString(R.string.album5)), R.drawable.art5));
+        songs.add(new Song((getString(R.string.uri6)), (getString(R.string.title6)), (getString(R.string.artist6)), (getString(R.string.album6)), R.drawable.art6));
 
         SongAdapter songAdapter =  new SongAdapter(this, songs);
         gridView.setAdapter(songAdapter);
