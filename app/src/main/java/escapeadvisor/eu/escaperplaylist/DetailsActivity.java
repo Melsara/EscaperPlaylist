@@ -93,7 +93,8 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
                     @Override
                     public void onClick(View view) {
                       onDestroy();
-                      finish();
+                        Intent openSongDetail = new Intent(DetailsActivity.this, MainActivity.class);
+                        startActivity(openSongDetail);
                     }
                 });
             }
