@@ -59,6 +59,9 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
         art = bundle.getInt(ART_KEY);
         setActivityComponent();
 
+        /*Calling back on actionBar*/
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         if (playButton != null) {
             playButton.setOnClickListener(new View.OnClickListener() {
                 @Override
