@@ -11,11 +11,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    final static String URI_KEY = "uri_key";
-    final static String TITLE_KEY = "title_key";
-    final static String ARTIST_KEY = "artist_key";
-    final static String ALBUM_KEY = "album_key";
-    final static String ART_KEY = "art_key";
     private GridView gridView;
 
     @Override
@@ -39,11 +34,11 @@ public class MainActivity extends Activity {
                 int art = song.getSongArt();
                 Intent openSongDetail = new Intent(MainActivity.this, DetailsActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putString(URI_KEY, uri);
-                bundle.putString(TITLE_KEY, title);
-                bundle.putString(ARTIST_KEY, artist);
-                bundle.putString(ALBUM_KEY, album);
-                bundle.putInt(ART_KEY, art);
+                bundle.putString(GlobalConstant.URI_KEY, uri);
+                bundle.putString(GlobalConstant.TITLE_KEY, title);
+                bundle.putString(GlobalConstant.ARTIST_KEY, artist);
+                bundle.putString(GlobalConstant.ALBUM_KEY, album);
+                bundle.putInt(GlobalConstant.ART_KEY, art);
                 openSongDetail.putExtras(bundle);
                 startActivity(openSongDetail);
 
