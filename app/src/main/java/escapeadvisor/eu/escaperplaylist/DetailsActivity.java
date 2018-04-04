@@ -20,6 +20,12 @@ import com.spotify.sdk.android.player.PlayerEvent;
 import com.spotify.sdk.android.player.Spotify;
 import com.spotify.sdk.android.player.SpotifyPlayer;
 
+import static escapeadvisor.eu.escaperplaylist.GlobalConstant.ALBUM_KEY;
+import static escapeadvisor.eu.escaperplaylist.GlobalConstant.ARTIST_KEY;
+import static escapeadvisor.eu.escaperplaylist.GlobalConstant.ART_KEY;
+import static escapeadvisor.eu.escaperplaylist.GlobalConstant.TITLE_KEY;
+import static escapeadvisor.eu.escaperplaylist.GlobalConstant.URI_KEY;
+
 public class DetailsActivity extends Activity implements SpotifyPlayer.NotificationCallback, ConnectionStateCallback {
     // Spfy player params
     private static final String CLIENT_ID = "[CLIENT-ID]";
@@ -37,11 +43,6 @@ public class DetailsActivity extends Activity implements SpotifyPlayer.Notificat
     private TextView artistTextView;
     private TextView albumTextView;
     private TextView buttonText;
-    final static String URI_KEY = "uri_key";
-    final static String TITLE_KEY = "title_key";
-    final static String ARTIST_KEY = "artist_key";
-    final static String ALBUM_KEY = "album_key";
-    final static String ART_KEY = "art_key";
     ImageButton playButton;
     private Button backButton;
     private Button stopButton;
