@@ -28,7 +28,7 @@ import static escapeadvisor.eu.escaperplaylist.GlobalConstant.URI_KEY;
 
 public class DetailsActivity extends Activity implements SpotifyPlayer.NotificationCallback, ConnectionStateCallback {
     // Spfy player params
-    private static final String CLIENT_ID = "[CLIENT-ID]";
+    private static final String CLIENT_ID = "[CLIENT_ID]";
     private static final String REDIRECT_URI = "escaperplaylist://callback";
     // Spfy player request code that will be used to verify if the result comes from correct activity
     private static final int REQUEST_CODE = 1111;
